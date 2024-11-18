@@ -1,9 +1,9 @@
 ARG version\
-    course1
+    course2="dev"
 ARG course="devops"\
     dration="2hrs"
 FROM almalinux:${version:-9}
-ENV course1=$course1
+ENV course1=$course2
 ARG course="devops1"\
     dration="2hrs1"
 RUN  echo "course is: ${course} and course1:${course1}"
