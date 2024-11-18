@@ -1,4 +1,4 @@
-ARG version
+ARG version\
     course1
 ARG course="devops"\
     dration="2hrs"
