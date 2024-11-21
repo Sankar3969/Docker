@@ -3,20 +3,20 @@ networks:
   expense:
 volumes:
   mysql:
-services:
+Services:
   mysql:
-    image: sankarjuvva/mysql.v1
+    image: sankarjuvva/mysql:latest
     container_name: mysql
     volumes:
     - mysql:/var/lib/mysql
   backend:
-    image: sankarjuvva/backend.v1
+    image: sankarjuvva/backend:latest
     container_name: backend
     command: sh -c "sleep 5 && node /opt/server/index.js"
     depends_on:
     - mysql
   frontend:
-    image: sankarjuvva/frontend.v1
+    image: sankarjuvva/frontend:latest
     container_name: frontend
     ports:
     - 80:80
