@@ -3,7 +3,7 @@ networks:
   expense:
 volumes:
   mysql:
-Services:
+services:
   mysql:
     image: sankarjuvva/mysql.v1
     container_name: mysql
